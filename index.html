@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ariel Dome - Portafolio de Cartografía</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Courier New', monospace;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #fff;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            letter-spacing: 8px;
+            margin-bottom: 20px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            color: #333;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #666;
+        }
+
+        .about-section {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 30px;
+            background-color: #fff;
+            padding: 30px;
+            margin-bottom: 30px;
+            border: 3px solid #333;
+        }
+
+        .profile-img {
+            width: 100%;
+            height: auto;
+            border: 2px solid #333;
+        }
+
+        .about-text h2 {
+            margin-bottom: 15px;
+            letter-spacing: 3px;
+        }
+
+        .about-text p {
+            margin-bottom: 12px;
+            text-align: justify;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2em;
+            letter-spacing: 5px;
+            margin: 50px 0 30px;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .project-card {
+            background-color: #fff;
+            padding: 25px;
+            border: 2px solid #333;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .project-card h3 {
+            margin-bottom: 15px;
+            letter-spacing: 2px;
+        }
+
+        .project-card p {
+            margin-bottom: 15px;
+            color: #666;
+        }
+
+        .project-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            letter-spacing: 1px;
+            transition: background-color 0.3s;
+        }
+
+        .project-link:hover {
+            background-color: #555;
+        }
+
+        .sketchfab-section {
+            background-color: #fff;
+            padding: 30px;
+            margin-bottom: 40px;
+            border: 2px solid #333;
+            text-align: center;
+        }
+
+        .sketchfab-link {
+            display: inline-block;
+            margin: 20px 10px;
+            padding: 15px 30px;
+            background-color: #1CAAD9;
+            color: #fff;
+            text-decoration: none;
+            letter-spacing: 2px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .sketchfab-link:hover {
+            background-color: #1590b8;
+        }
+
+        .maps-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .map-item {
+            background-color: #fff;
+            border: 2px solid #333;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .map-item:hover {
+            transform: scale(1.03);
+        }
+
+        .map-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .map-caption {
+            padding: 15px;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #333;
+            color: #fff;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 768px) {
+            .about-section {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 1.8em;
+                letter-spacing: 4px;
+            }
+
+            .section-title {
+                font-size: 1.5em;
+                letter-spacing: 3px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ARIEL DOME</h1>
+        <div class="social-links">
+            <a href="https://instagram.com" target="_blank">📷 Instagram</a>
+            <a href="https://twitter.com" target="_blank">🐦 Twitter</a>
+            <a href="https://facebook.com" target="_blank">📘 Facebook</a>
+            <a href="https://linkedin.com" target="_blank">💼 LinkedIn</a>
+            <a href="mailto:tu@email.com">✉️ Email</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="about-section">
+            <div>
+                <img src="tu-foto.jpg" alt="Ariel Dome" class="profile-img">
+            </div>
+            <div class="about-text">
+                <h2>GETTING TO KNOW ME</h2>
+                <p>Hello, I'm Aying! A self-supporting IV - BS Geography student at University of the Philippines and a passionate freelance map-maker.</p>
+                <p>I am an international mapathon champion. I am expert in creating detailed location maps for various applications and producing hazard maps to assess and visualize potential risks. Also an experienced in flood analysis mapping for identifying flood-prone areas and in developing suitability maps to determine the best locations for specific activities or developments.</p>
+                <p>As a map-maker, I transform ideas into visual landscapes. My love for cartography and attention to detail drive me to create custom maps tailored to the unique needs of my clients.</p>
+                <p>I create maps using QGIS, ArcGIS Pro, Adobe Illustrator, Blender, and RStudio.</p>
+            </div>
+        </section>
+
+        <h2 class="section-title">PROYECTOS EN LOS QUE HE TRABAJADO</h2>
+        
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>PROYECTO 1</h3>
+                <p>Descripción del proyecto de mapeo o análisis geoespacial en el que participaste. Incluye detalles sobre las herramientas utilizadas y los resultados obtenidos.</p>
+                <a href="#" class="project-link">VER DETALLES</a>
+            </div>
+
+            <div class="project-card">
+                <h3>PROYECTO 2</h3>
+                <p>Descripción del segundo proyecto. Menciona el alcance, metodología y cualquier colaboración importante.</p>
+                <a href="#" class="project-link">VER DETALLES</a>
+            </div>
+
+            <div class="project-card">
+                <h3>PROYECTO 3</h3>
+                <p>Descripción del tercer proyecto relacionado con cartografía, análisis de riesgos o mapas de inundación.</p>
+                <a href="#" class="project-link">VER DETALLES</a>
+            </div>
+
+            <div class="project-card">
+                <h3>PROYECTO 4</h3>
+                <p>Otro proyecto destacado en tu carrera como cartógrafo profesional.</p>
+                <a href="#" class="project-link">VER DETALLES</a>
+            </div>
+        </div>
+
+        <div class="sketchfab-section">
+            <h2 style="letter-spacing: 3px; margin-bottom: 20px;">MODELOS 3D EN SKETCHFAB</h2>
+            <p style="margin-bottom: 20px;">Explora mis modelos tridimensionales y mapas 3D interactivos</p>
+            <a href="https://sketchfab.com/tu-usuario" target="_blank" class="sketchfab-link">VER PERFIL COMPLETO</a>
+            <a href="https://sketchfab.com/tu-usuario/models" target="_blank" class="sketchfab-link">GALERÍA DE MODELOS</a>
+        </div>
+
+        <h2 class="section-title">MAP PORTFOLIO</h2>
+
+        <div class="maps-gallery">
+            <div class="map-item">
+                <img src="map1.jpg" alt="Antipodal Planisphere">
+                <div class="map-caption">ANTIPODAL PLANISPHERE</div>
+            </div>
+
+            <div class="map-item">
+                <img src="map2.jpg" alt="Asia at Night">
+                <div class="map-caption">ASIA AT NIGHT</div>
+            </div>
+
+            <div class="map-item">
+                <img src="map3.jpg" alt="War Capability">
+                <div class="map-caption">WAR CAPABILITY RANKING</div>
+            </div>
+
+            <div class="map-item">
+                <img src="map4.jpg" alt="Cleanup Activities">
+                <div class="map-caption">CLEANUP ACTIVITIES</div>
+            </div>
+
+            <div class="map-item">
+                <img src="map5.jpg" alt="Population Density">
+                <div class="map-caption">POPULATION DENSITY</div>
+            </div>
+
+            <div class="map-item">
+                <img src="map6.jpg" alt="Flight Routes">
+                <div class="map-caption">FLIGHT ROUTES</div>
+            </div>
+
+            <div class="map-item">
+                <img src="map7.jpg" alt="Favourite Route">
+                <div class="map-caption">FAVOURITE ROUTE AROUND UP</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 ARIEL DOME - Cartografía Profesional</p>
+        <p>Creado con pasión por los mapas 🗺️</p>
+    </footer>
+</body>
+</html>

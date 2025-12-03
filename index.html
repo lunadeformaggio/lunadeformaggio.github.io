@@ -103,10 +103,29 @@
     <span class="close">&times;</span>
     <img class="modal-content" id="modalImg">
 </div>
+
+<script>
+document.querySelectorAll('.project-card img').forEach(img => {
+    img.onclick = function () {
+        document.getElementById("imgModal")style.display = "block";
+        document.getElementbyId("modalImg").src = this.src;
+    }
+});
+
+    document.querySelector(".close").onclick = function() {
+        document.getElementbyId("imgModal").style.display = "none";
+    };
+</script>
+
+
+    
+</script>
+
     
 </body>
 
 </html>
+
 
 
 
